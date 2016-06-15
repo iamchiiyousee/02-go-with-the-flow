@@ -13,17 +13,18 @@ namespace ConsoleApplication6
             Console.WriteLine("Welcome to Burger Program!");
             Console.WriteLine("^_^");
             Console.WriteLine("Would you like a burger today?");
-            String Burger = (Console.ReadLine());
+            String answer = (Console.ReadLine());
 
-            if (Burger == "yes")
+            if (answer.ToLower() == "yes")
             {
                 Console.WriteLine("Great, one burger. Would you like fries with that?");
-                String Fries = (Console.ReadLine()); 
+                answer = (Console.ReadLine()); 
 
-            if (Fries == "Yes")
+            if (answer.ToLower() == "yes")
             {
                 Console.WriteLine("Fantastic! Okay, one more thing, would you like a drink with your meal?");
-                String Drink = (Console.ReadLine());
+                answer = (Console.ReadLine());
+                    
 
             }
 
@@ -38,7 +39,7 @@ namespace ConsoleApplication6
                 Console.WriteLine("Would you like a burger today?");
                 Console.ReadLine();
             }
-            if (Burger =="No")
+            if (answer =="No")
             {
                 Console.WriteLine("Okay, would you like anything else?");
                 Console.ReadLine();
